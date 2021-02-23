@@ -1,0 +1,106 @@
+board:
+  buy_url_cn: https://www.st.com/zh/evaluation-tools/nucleo-l476rg.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32 Nucleo-64 board provides an affordable and flexible way
+    for users to try out new concepts and build prototypes by choosing from the various
+    combinations of performance and power consumption features, provided by the STM32
+    microcontroller. For the compatible boards, the external SMPS significantly reduces
+    power consumption in Run mode.
+  description_zh: NUCLEO-L476RG，内核是 Cortex-M4，绿色的 Nucleo 标志显示了这款芯片是低功耗系列，板载 ST-LINK/V2-1
+    调试器/编程器，迷你尺寸，mirco USB 接口，可数的外设，Arduino™ nano 兼容的接口。
+  emulator_machine: ''
+  large_image: documents/images/board.jpg
+  name: STM32L476-ST-NUCLEO
+  price_cn: 125 CNY
+  price_global: 19.33 USD
+  sale_contact_cn: https://www.st.com/zh/evaluation-tools/nucleo-l476rg.html
+  sale_contact_global: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
+  small_image: documents/images/board_small.png
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32L476RG
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L476
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf
+  title: dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics
+example_projects: []
+features:
+- 'MCU: STM32L476RG, 80MHz, 1024KB Flash, 128KB RAM (96+32)'
+- 'LED: 3 PCS, USB Communication (LD1 dual color), POWER LED(LD3 red), USER LED(LD2
+  yellow green)'
+- 'Common Interface: USB supports three different interfaces: virtual COM port, mass
+  storage, and debug port.'
+features_zh:
+- MCU：STM32L476RG，主频 80MHz，1024KB FLASH ，128KB RAM（96+32）
+- LED：3个，USB communication(LD1 双色),power LED(LD3 红色),user LED(LD2 黄绿色)
+- 常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口。
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32l476
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
