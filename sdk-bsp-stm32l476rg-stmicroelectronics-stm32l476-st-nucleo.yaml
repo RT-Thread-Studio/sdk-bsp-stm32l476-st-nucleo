@@ -49,7 +49,7 @@ features_zh:
 - 常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口。
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 1.0.1
+pkg_version: 1.0.2
 template_projects:
 - builtin_files:
   - files_and_folders:
@@ -103,6 +103,59 @@ template_projects:
   project_description: ''
   project_name: stm32l476
   project_type: rt-thread|@full|@latest
+
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 4.1.0
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32l476
+  project_type: rt-thread|@full|@4.1.0
 
 - builtin_files:
   - files_and_folders:
